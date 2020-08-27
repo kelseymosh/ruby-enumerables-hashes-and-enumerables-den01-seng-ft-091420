@@ -1,3 +1,4 @@
+require 'pry'
 def select_winner(passengers)
   winner = " "
   passengers.each do |suite, name|
@@ -5,5 +6,6 @@ def select_winner(passengers)
       winner = name
     end
     winner
+    binding.pry
   end
 end
